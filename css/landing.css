@@ -1,0 +1,140 @@
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-nav{
+    background-color:#FFF0ED;
+    padding: 20px;
+}
+.coffee-bag{
+    background-color: #FFF0ED;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+}
+.discount{
+    background-color: #393939;
+    color:white;
+    font-size: 46px;
+    padding: 20px;
+    margin: 10%;
+    text-align: center;
+}
+.product-container{
+    background-color:#F7F7F7;
+}
+.footer-background{
+    background-color: #FFF0ED;
+    display: flex;
+    padding:5%;
+}
+.address, .hours, .social {
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: left; 
+}
+.price{
+    color:#5BACC3;
+    text-align: center;
+    font-size: 32px;
+}
+
+h1{
+    font-size: 4.5em;
+    font-weight: 300;
+    color: #393939;
+}
+h2{
+    font-size: 4.5em;
+    font-weight: 300;
+    color: #393939;
+}
+h3{
+    font-size: 2.5em;
+    font-weight: 200;
+    color: #393939;
+
+}
+.landing-button{
+    background-color:#5BACC3 ;
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 5px 15px;
+}
+
+.header-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1em;
+    flex-direction: row;
+}
+.header-list li{
+    margin-left: 1em;
+}
+.header-list a {
+    text-decoration: none;
+    color: #393939;
+
+}
+.header-nav{
+    background-color:#FFF0ED;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 1em;
+}
+.card{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    background-color: white;
+}
+.card img{
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.container{
+    padding: 10px;
+}
+
+.description-left{
+    width:33%;
+    text-align: left;
+    padding-bottom: 5%;
+
+}
+.bag{
+    height: auto;
+    margin-left: auto;
+    padding-right: 8em;
+}
+.conatiner-bag{
+    text-align: left;
+
+}
+.header-list a:active{
+    color:#5BACC3;
+}
