@@ -277,3 +277,15 @@ h2 a {
     text-decoration: none;
     color: black;
 }
+.bean-left{
+    position: absolute;
+    left:-2em;
+    opacity: 0.3;
+    width: 5%;
+}
+.bean-right{
+    position: absolute;
+    right: -2em;
+    opacity: 0.3;
+    width: 5%;
+}
