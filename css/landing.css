@@ -31,6 +31,7 @@ body {
     padding: 20px;
     margin: 8%;
     text-align: center;
+    animation: flash 2.5s infinite;/*Exercise 17: Animations*/
 }
 .product-container{
     background-color:#F7F7F7;
@@ -93,6 +94,7 @@ h3{
     padding: 0.75em 1.25em;
     bottom: 5px;
     right: 5px;
+    transition: transform 0.3s ease; /*very slow than fast for the animation*/
 }
 .landing-button-container{
     background-color:#5BACC3;
@@ -245,4 +247,33 @@ h3{
     width: 100%; /*makes sure this container is the width of the entirepage, so our button inside this container can be centered in the page */
     display: flex;
     justify-content: center;
+}
+
+@keyframes flash {/*Exercise 17: Flash Animations*/
+    0% {background-color: #393939; color: white}
+    50% {background-color: #5BACC3; color: white;}
+    100% {background-color: #393939; color: white;}
+}
+
+@keyframes rotate {/*Exercise 17: this preforms the animation. the translate is needed because of the translate in the image originally*/
+    0% {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+.different-right:hover .rotating-can{ /*Exercise 17 on hover rotate starts */
+    animation: rotate 2s linear infinite; /*Rotate infinitely with 1 full rotation every 2 seconds*/
+    transform-origin: center ;
+
+}
+.landing-button:active{/*Exercise 17*/
+    transform: translateY(5px) translateX(5px);
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
 }
