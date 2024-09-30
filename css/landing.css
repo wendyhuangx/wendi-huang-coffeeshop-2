@@ -13,7 +13,7 @@ body {
 }
 .coffee-bag{
     background-color: #FFF0ED;
-    padding: 20px;
+    padding: 0 8% 2% 8%;
     display:flex;
     align-items: center;
 }
@@ -22,7 +22,7 @@ body {
     color:white;
     font-size: 46px;
     padding: 20px;
-    margin: 10%;
+    margin: 8%;
     text-align: center;
 }
 .product-container{
@@ -31,7 +31,7 @@ body {
 .footer-background{
     background-color: #FFF0ED;
     display: flex;
-    padding:5%;
+    padding:5% 8%;
 }
 .address, .hours, .social {
     flex: 1; 
@@ -64,8 +64,8 @@ h3{
     background-color:#5BACC3 ;
     color: white;
     border: none;
-    font-size: 28px;
-    padding: 5px 15px;
+    font-size: 18px;
+    padding: 0.75em 1.25em;
 }
 
 .header-list{
@@ -88,36 +88,55 @@ h3{
 .header-nav{
     background-color:#FFF0ED;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
-    padding-bottom: 1em;
+    padding: 1em 1%;
+
 }
 .card{
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 10px;
+    padding: 0; /*13*/
     width: calc(25% - 20px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     overflow: hidden;
     background-color: white;
+    margin: 0;
+    display: flex; /*13*/
+    flex-direction: column ; /*13*/
+    align-items: center ; /*13 - center content horizationally*/
+
 }
 .card img{
-    width: 25%;
+    width: 80%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain; /*13 images scale w/o distortion*/
+    display: block; /*13*/
+    aspect-ratio: 4/3; /*13 images are same size w/in the aspect ratio*/
+    padding: 1em 0 ;
+
 }
 
 .card-container{
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em ;
+
+ 
 }
 .container{
-    padding: 10px;
+    padding: 2em;
+    width: 100%;
+    background-color: #FFF0ED;
+    margin: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .description-left{
@@ -129,7 +148,6 @@ h3{
 .bag{
     height: auto;
     margin-left: auto;
-    padding-right: 8em;
 }
 .conatiner-bag{
     text-align: left;
@@ -137,4 +155,12 @@ h3{
 }
 .header-list a:active{
     color:#5BACC3;
+}
+
+.product-info { /*seprate text from the price so they sit next to each other*/
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    text-align: left;
+
 }
