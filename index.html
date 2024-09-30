@@ -11,8 +11,10 @@
     <header>
         <nav>
             <div class="header-nav">
-                <a href="index.html"><img src="assets/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"></a>
-                <h2 style="text-align: left; font-size: 3em;">nitro</h2>
+                <div class="left-nav"> <!--Exercise 14 New div-->
+                    <a href="index.html"><img src="assets/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"></a>
+                    <h2 style="text-align: left; font-size: 3em;">nitro</h2>
+                </div>
                 <ul class="header-list">
                     <li><a href="index.html">ABOUT</a></li>
                     <li><a href="pages/menu.html">MENU</a></li>
@@ -70,6 +72,27 @@
             
         </section>
         <section>
+            <div class="different"> <!--Exercise 14: ALL NEW-->
+                <div class="different-left">
+                    <h2>We're Different</h2>
+                    <p class="description-left">We grow and roat our own beans. Every bean, every cup, every step of the way, we strive for excellence.</p>
+                    <div class="different-icons">
+                        <img src="assets/planting.svg" style="width: 12.5%;" alt="crops">
+                        <img src="assets/coffee-beans.svg" style="width: 12.5%;" alt="beans">
+                        <img src="assets/coffee-cup.svg" style="width: 12.5%;" alt="cup">
+                    </div>
+                    <div class="landing-button-container"><!--Exercise 15-->
+                        <a href="index.html"> <button type="button" class="landing-button" >LEARN MORE</button></a>
+                    </div>
+                </div>
+                <div class="different-right">
+                    
+                        <div class="coldbrew-background">
+                            <img src="assets/tiltedcan.png" alt="tiltedcan" class="rotating-can"><!--Exercise 17 class is for animation-->
+                        </div>
+                    
+                </div>
+            </div><!--Exercise 14: ALL NEW-->
             <div class="discount">
                 <p>Get 20% off your first order with code: <b>FirstNitro</b></p>
             </div>
@@ -77,21 +100,24 @@
     </main>
     <footer>
         <div class="footer-background" style="background-color: #FFF0ED;">
-            <div class="address">
-                <h3>Address</h3>
-                <p>503 Broadway Penthouse<br>New York</p>
-            </div>
-            <div class="hours">
-                <h3>Hours</h3>
-                <p><b>Monday - Friday:</b> 9am - 7pm<br><b>Saturday - Sunday:</b> 10am - 5pm</p>
-            </div>
-            <div class="social">
-                <h3>Social</h3>
-                <a href="https://www.facebook.com"><img src="assets/Facebook-Icon.svg" alt="Facebook"></a>
-                <a href="https://www.yelp.com"><img src="assets/Yelp-Icon.svg" alt="Yelp"></a>
-                <a href="https://www.instagram.com"><img src="assets/Instagram-Icon.svg" alt="Instagram"></a>
-            </div>
-            
+            <div class="footer-content"> 
+                <div class="address">
+                    <h3>Address</h3>
+                    <p>503 Broadway Penthouse<br>New York</p>
+                </div>
+                <div class="hours">
+                    <h3>Hours</h3>
+                    <p><b>Monday - Friday:</b> 9am - 7pm<br><b>Saturday - Sunday:</b> 10am - 5pm</p>
+                </div>
+                <div class="social">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a href="https://www.facebook.com"><img src="assets/Facebook-Icon.svg" alt="Facebook"></a>
+                        <a href="https://www.yelp.com"><img src="assets/Yelp-Icon.svg" alt="Yelp"></a>
+                        <a href="https://www.instagram.com"><img src="assets/Instagram-Icon.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>   
         </div>
     </footer>
 

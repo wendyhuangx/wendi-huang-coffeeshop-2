@@ -13,20 +13,22 @@ body {
     background-image: url('../assets/coffee-circle.jpg');
     background-size: cover;
     background-position: center;    
-    height: 500px;
+    height: 700px; /*Exercise 14: changed this be a bit bigger so you can kinda see the full circle*/
     position: relative;
     justify-content: center;
     display: flex;
-    align-items: flex-start;
+    align-items: center;/*Exercise 14: changed this to center LOL*/
 
 }
 
 .menu-text{
     background-color: #393939;
-    padding: 1em 1.2em 2.5em 1.2em;
+    padding: 1em 1.2em 1em 1.2em;
     top: 20px;
     color: white;
     text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
     
 }
 .list-background{
@@ -125,7 +127,12 @@ h3{
 .header-nav{
     background-color:#FFF0ED;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding-bottom: 1em;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1em 1%;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
 }
