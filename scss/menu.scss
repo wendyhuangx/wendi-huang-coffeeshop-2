@@ -1,0 +1,131 @@
+@use './partials/global' as *;
+$color_1: white;
+$color_2: #393939;
+$color_3: #5BACC3;
+$font-family_1: 'Open Sans';
+$background-color_1: #393939;
+$background-color_2: #FFF0ED;
+$background-color_3: #F7F7F7;
+
+body {
+	font-family: $font-family_1;
+	font-weight: 400;
+	margin: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.menu-background {
+	background-image: url('../assets/coffee-circle.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+	position: relative;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+.menu-text {
+	padding: 1em 1.2em 1em 1.2em;
+	color: $color_1;
+	text-align: center;
+	font-size: 2.5em;
+	position: relative;
+	bottom: 20px;
+	right: 20px;
+	border: .2em solid #5BACC3;
+}
+.menu-text-container {
+	position: relative;
+	background-color: $background-color_1;
+	top: 20px;
+	left: 20px;
+}
+.list-background {
+	background-color: $background-color_1;
+}
+.centered-list {
+	list-style-type: none;
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: $color_1;
+		border-left: 4px solid #5BACC3;
+		font-size: 26px;
+		padding: 0px 1em 0px 1em;
+	}
+}
+li {
+	display: inline-block;
+	margin: 10px;
+}
+.hot-drinks {
+	background-color: $background-color_2;
+	padding: 20px;
+}
+.cold-drinks {
+	background-color: $background-color_3;
+	padding: 20px;
+}
+.pastries {
+	background-color: $background-color_2;
+	padding: 20px;
+}
+h2 {
+	text-align: center;
+	font-size: 4.5em;
+	font-weight: 300;
+	a {
+		text-decoration: none;
+		color: $color_2;
+		text-align: left;
+		padding: 0;
+	}
+}
+h3 {
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 300;
+	padding: 10px;
+}
+.price {
+	color: $color_3;
+	text-align: center;
+	padding: 10px;
+}
+.description-left {
+	width: 33%;
+	margin: 0 auto;
+	text-align: center;
+	font-style: italic;
+}
+.header-list {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 1em;
+	li {
+		margin-left: 1em;
+	}
+	a {
+		text-decoration: none;
+		color: $color_2;
+		&:active {
+			color: $color_3;
+		}
+	}
+}
+.header-nav {
+	background-color: $background-color_2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em 1%;
+}
+.left-nav {
+	display: flex;
+	align-items: center;
+}
